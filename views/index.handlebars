@@ -1,0 +1,11 @@
+<h1>Burgers</h1>
+
+<h1>Select Burgers!</h1>
+
+<ul>
+    {{#each burgers}}
+        {{#unless devoured}}
+            {{>burgers.burger_name}}
+        {{/unless}}
+    {{/each}}
+</ul>
